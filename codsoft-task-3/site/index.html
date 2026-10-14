@@ -1,0 +1,139 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Hub | CodSoft Task 3</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+            border-bottom: 1px solid #273449;
+        }
+        header h2 { color: #38bdf8; }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            padding: 90px 8%;
+            text-align: center;
+            background: linear-gradient(135deg, #172554, #0f172a);
+        }
+        .hero h1 { font-size: clamp(32px, 5vw, 54px); margin-bottom: 16px; }
+        .hero span { color: #38bdf8; }
+        .hero p { color: #cbd5e1; max-width: 650px; margin: auto; }
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+        main { padding: 55px 8%; }
+        h2 { margin-bottom: 20px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #111827;
+            border: 1px solid #273449;
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .card h3 { color: #38bdf8; margin-bottom: 10px; }
+        .card p { color: #cbd5e1; }
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #273449;
+            color: #94a3b8;
+        }
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; }
+            nav a { margin: 0 7px; }
+            .hero { padding: 60px 6%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>DevOps Hub</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
+            <a href="#pipeline">Pipeline</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Build. Automate. <span>Deploy.</span></h1>
+        <p>A containerized web application demonstrating Docker, Nginx,
+        Git workflows and CI/CD fundamentals.</p>
+        <a class="btn" href="#tools">Explore Technologies</a>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>Project Overview</h2>
+            <div class="card">
+                <p>This project demonstrates containerized web hosting
+                with Nginx and a reproducible Docker deployment workflow
+                as part of the CodSoft DevOps Internship.</p>
+            </div>
+        </section>
+
+        <section id="tools" style="margin-top: 45px;">
+            <h2>Technology Stack</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Docker</h3>
+                    <p>Package the application into a portable container.</p>
+                </div>
+                <div class="card">
+                    <h3>Nginx</h3>
+                    <p>Serve static web content through a lightweight web server.</p>
+                </div>
+                <div class="card">
+                    <h3>Git & GitHub</h3>
+                    <p>Track source changes and maintain version history.</p>
+                </div>
+                <div class="card">
+                    <h3>CI/CD</h3>
+                    <p>Automate build and verification using GitHub Actions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pipeline" style="margin-top: 45px;">
+            <h2>Deployment Workflow</h2>
+            <div class="card">
+                <p>01. Commit code → 02. Build Docker image →
+                03. Verify the build → 04. Run the container →
+                05. Validate the application in the browser.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        CodSoft DevOps Internship · Task 3 · Docker & Nginx
+    </footer>
+</body>
+</html>
+```
